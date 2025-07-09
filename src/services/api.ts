@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://backend-2ls9.onrender.com", // ✅ full backend URL
-  withCredentials: true, // optional — only if backend sets cookies
+  baseURL: process.env.REACT_APP_API_BASE_URL,
+  withCredentials: true,
 });
 
 // Request interceptor
